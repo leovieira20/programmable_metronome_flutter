@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:programmable_metronome_flutter/ioc.dart';
 import 'package:programmable_metronome_flutter/pages/my_homepage.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: ioc<MyHomePage>(),
     );
   }
 }
